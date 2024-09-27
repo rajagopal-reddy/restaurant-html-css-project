@@ -1,0 +1,149 @@
+.main-section {
+  display: flex;
+  gap: 0; 
+  height: 100vh; 
+}
+
+.video-section, .book-table-section {
+  flex: 1; 
+  box-sizing: border-box; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+}
+ 
+.video-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fea116;
+  transition: opacity 0.15s;
+}
+
+.play-button img {
+  width: 50px;
+}
+
+.play-button:hover {
+  opacity: 0.8;
+}
+
+.play-button:active {
+  opacity: 0.6;
+}
+
+.book-table-section {
+  background-color: #0f172b;
+  padding: 40px;
+}
+
+.book-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.book-table-heading {
+  font-family: 'Pacifico', cursive;
+  color: #fea116;
+  font-size: 18px;
+  font-weight: 490;
+  margin-right: 10px;
+}
+
+.book-table-mask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.book-table-sub-heading {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 33px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.book-table-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.book-now-button {
+  width: 620px; 
+  height: 45px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fea116;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  transition: opacity 0.15s;
+}
+
+.book-now-button:hover {
+  opacity: 0.8;
+}
+
+.book-now-button:active {
+  opacity: 0.6;
+}
+
+.book-table-form .form-group-1,
+.form-group-2 {
+  display: flex;
+  gap: 10px; 
+  width: 100%; 
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; 
+  height: 45px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  width: 620px;
+  height: auto; 
+  resize: vertical; 
+  min-height: 90px;
+}
